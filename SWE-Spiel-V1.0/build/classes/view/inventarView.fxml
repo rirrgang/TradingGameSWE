@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="inventar" prefHeight="365.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.inventarController">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="970.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/background15.jpg" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="365.0" prefWidth="970.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="365.0" prefWidth="435.0" spacing="25.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Dorf-Waren"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Weizen"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Mais"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Kartoffeln"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Rüben"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht einzeln"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="dorfWareGT1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1 kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="dorfWareGT2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1.5 kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="dorfWareGT3" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="dorfWareGT4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 0.5 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="21.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Anzahl:"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <TextField fx:id="dorfWareTF1" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="dorfWareTF2" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="dorfWareTF3" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="dorfWareTF4" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="365.0" prefWidth="435.0" spacing="25.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Stadt-Waren"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Bohnen mit Speck"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Töpfe"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Geschirr"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Hacke"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Hammer"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Säge"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gewicht einzeln" />
+                        <Text fx:id="stadtWareGT1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1 kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="stadtWareGT2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1.5 kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="stadtWareGT3" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="stadtWareGT4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 0.5 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="stadtWareGT5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 2kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <Text fx:id="stadtWareGT6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 2kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="21.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Anzahl:"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                        <TextField fx:id="stadtWareTF1" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="stadtWareTF2" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="stadtWareTF3" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="stadtWareTF4" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="stadtWareTF5" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                        <TextField fx:id="stadtWareTF6" alignment="CENTER" editable="false" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Button layoutX="315.0" layoutY="315.0" mnemonicParsing="false" onAction="#back" stylesheets="@../css/button.css" text="Zurück" />
+   </children>
+</AnchorPane>

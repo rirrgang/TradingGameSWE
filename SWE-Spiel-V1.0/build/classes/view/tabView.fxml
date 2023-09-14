@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="tab" prefHeight="50.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.tabController">
+   <children>
+      <HBox alignment="CENTER" layoutX="170.0" prefHeight="50.0" prefWidth="800.0" spacing="15.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/day.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="currentDayText" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Tag"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/life.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="currentLifeText" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Leben"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/weight.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="currentWeightText" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Tragelast"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/gold.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="currentGoldText" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+         </children>
+      </HBox>
+      <Text fx:id="currentPositionText" layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du befindest dich in: Ort1" wrappingWidth="280.0" AnchorPane.leftAnchor="15.0"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+      <ImageView fx:id="image" fitHeight="50.0" fitWidth="50.0" layoutX="756.0" onMouseClicked="#exit" onMouseEntered="#highlight" onMouseExited="#lowlight" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../pictures/close.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+   </children>
+</AnchorPane>

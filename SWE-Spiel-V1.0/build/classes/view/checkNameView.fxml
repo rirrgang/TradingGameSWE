@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="checkName" prefHeight="365.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.checkNameController">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="970.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/background16.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="268.0" prefHeight="365.0" prefWidth="435.0" spacing="15.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Handels-Simulator v1.0"><font><Font name="Salina Regular" size="23.0" /></font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Bitte gib deinen Namen ein:"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+            <TextField fx:id="nameTextField" styleClass="textfield" stylesheets="@../css/textfield.css" />
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="435.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#setPlayerName" stylesheets="@../css/button.css" text="Bestätigen" />
+                  <Button mnemonicParsing="false" onAction="#clear" stylesheets="@../css/button.css" text="Löschen" />
+               </children>
+            </HBox>
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#startGame" stylesheets="@../css/button.css" text="Starte Spiel" visible="false" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

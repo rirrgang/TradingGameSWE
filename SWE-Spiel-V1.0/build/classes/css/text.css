@@ -1,0 +1,6 @@
+.title {
+  -fx-background-color: black;
+  -fx-color: #fff;
+  -fx-display: inline;
+  -fx-padding: 0.5rem;
+}
