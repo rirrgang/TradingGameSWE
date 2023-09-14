@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="kaufenStadt" prefHeight="365.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.kaufenStadtController">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="970.0" opacity="0.9" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/background3.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="365.0" prefWidth="970.0" spacing="25.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <Text fx:id="stadtWareNT1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Bohnen mit Speck"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareNT2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Töpfe"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareNT3" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Geschirr"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareNT4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Hacke"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareNT5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Hammer"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareNT6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Säge"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <Text fx:id="stadtWareGT1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1 kg"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareGT2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 2 kg"><font><Font name="Salina Regular" size=" 15.0" /></font></Text>
+                  <Text fx:id="stadtWareGT3" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 1 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareGT4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 3 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareGT5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 2 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareGT6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Gewicht: 2 kg "><font><Font name="Salina Regular" size="15.0" /></font></Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <Text fx:id="stadtWarePT1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Preis: 1 Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWarePT2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Preis: 3 Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWarePT3" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Preis: 2 Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWarePT4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Preis: 5 Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWarePT5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Preis: 4 Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWarePT6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Preis: 3 Gold"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="11.0">
+               <children>
+                  <TextField fx:id="stadtWareTF1" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                  <TextField fx:id="stadtWareTF2" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                  <TextField fx:id="stadtWareTF3" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                  <TextField fx:id="stadtWareTF4" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                  <TextField fx:id="stadtWareTF5" styleClass="textfield" stylesheets="@../css/textfield.css" />
+                  <TextField fx:id="stadtWareTF6" styleClass="textfield" stylesheets="@../css/textfield.css" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="11.0">
+               <children>
+                  <Button fx:id="stadtWareButton1" mnemonicParsing="false" onAction="#kaufen" stylesheets="@../css/button.css" text="kaufen" />
+                  <Button fx:id="stadtWareButton2" mnemonicParsing="false" onAction="#kaufen" stylesheets="@../css/button.css" text="kaufen" />
+                  <Button fx:id="stadtWareButton3" mnemonicParsing="false" onAction="#kaufen" stylesheets="@../css/button.css" text="kaufen" />
+                  <Button fx:id="stadtWareButton4" mnemonicParsing="false" onAction="#kaufen" stylesheets="@../css/button.css" text="kaufen" />
+                  <Button fx:id="stadtWareButton5" mnemonicParsing="false" onAction="#kaufen" stylesheets="@../css/button.css" text="kaufen" />
+                  <Button fx:id="stadtWareButton6" mnemonicParsing="false" onAction="#kaufen" stylesheets="@../css/button.css" text="kaufen" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <Text fx:id="stadtWareStatusT1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du hast x &quot;Bohnen mit Speck &quot;gekauft."><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareStatusT2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du hast x &quot;Töpfe&quot; gekauft."><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareStatusT3" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du hast x &quot;Geschirr&quot; gekauft."><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareStatusT4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du hast x &quot;Hacke(n)&quot; gekauft."><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareStatusT5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du hast x &quot;Hammer&quot; gekauft."><font><Font name="Salina Regular" size="15.0" /></font></Text>
+                  <Text fx:id="stadtWareStatusT6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Du hast x &quot;Säge(n)&quot; gekauft"><font><Font name="Salina Regular" size="15.0" /></font></Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button layoutX="470.0" layoutY="315.0" mnemonicParsing="false" onAction="#back" stylesheets="@../css/button.css" text="Zurück" />
+      <Text layoutX="425.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Was möchtest du kaufen?" />
+   </children>
+</AnchorPane>

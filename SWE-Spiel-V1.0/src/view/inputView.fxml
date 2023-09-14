@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="input" prefHeight="105.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.inputController">
+   <children>
+      <HBox layoutX="14.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="242.5" spacing="15.0">
+               <children>
+                  <Button fx:id="reiseButton" minWidth="200.0" mnemonicParsing="false" onAction="#showReisen" stylesheets="@../css/button.css" text="Reisen">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="taetigkeitButton" minWidth="200.0" mnemonicParsing="false" onAction="#showTaetigkeiten" stylesheets="@../css/button.css" text="Tätigkeit suchen" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="242.5" spacing="15.0">
+               <children>
+                  <Button fx:id="kaufenButton" minWidth="200.0" mnemonicParsing="false" onAction="#showKaufen" stylesheets="@../css/button.css" text="Kaufen">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="verkaufenButton" minWidth="200.0" mnemonicParsing="false" onAction="#showVerkaufen" stylesheets="@../css/button.css" text="Verkaufen" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="242.5" spacing="15.0">
+               <children>
+                  <Button fx:id="inventarButton" minWidth="200.0" mnemonicParsing="false" onAction="#showInventar" stylesheets="@../css/button.css" text="Inventar anzeigen">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="essenButton" minWidth="200.0" mnemonicParsing="false" onAction="#showEssen" stylesheets="@../css/button.css" text="Essen" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="242.5" spacing="15.0">
+               <children>
+                  <Button fx:id="tagBeendenButton" minWidth="200.0" mnemonicParsing="false" onAction="#showTagBeenden" stylesheets="@../css/button.css" text="Tag Beenden">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="spielBeendenButton" minWidth="200.0" mnemonicParsing="false" onAction="#exit" stylesheets="@../css/button.css" text="Spiel Beenden" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
